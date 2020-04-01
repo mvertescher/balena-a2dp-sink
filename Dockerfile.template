@@ -12,4 +12,7 @@ RUN install_packages \
 COPY start.sh /usr/src/
 RUN chmod +x /usr/src/start.sh
 
+# Uncomment to write pcm audio to a file
+# COPY asoundrc /root/.asoundrc
+
 CMD [ "/bin/bash", "/usr/src/start.sh" ]
